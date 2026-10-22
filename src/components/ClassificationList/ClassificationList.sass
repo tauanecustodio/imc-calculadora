@@ -13,8 +13,7 @@
         color: variables.$color-text-primary
 
     &__list
-        display: flex
-        flex-direction: column
+        display: grid
         gap: 0.5rem
 
     &__item
@@ -41,3 +40,8 @@
         width: 17px
         height: 17px
         border-radius: 50%
+
+    @media (min-width: 600px)
+        &__list
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 1rem

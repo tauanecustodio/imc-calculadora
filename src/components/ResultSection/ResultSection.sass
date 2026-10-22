@@ -1,43 +1,23 @@
 @use '../../variables'
 
 .imc
-    
+    &__icon
+        margin-right: 0.5rem
 
-    &__faixa
-        color: variables.$color-text-secondary
-        font-size: 13px
-        font-weight: 600
-
-    &__content h3
-        margin: 5px 0 0
-        font-size: 16px
-
-    
-    &__calculo
-        margin: 40px auto
-        padding: 30px
-        background: #ffffff
-        border-radius: 16px
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08)
-        font-family: Arial, sans-serif
-        color: #1f2937
-
-    &__calculo h2
-        margin: 0 0 30px
-        text-align: center
-        font-size: 24px
+    &__title
+        margin-bottom: 1rem
+        color: variables.$color-text-primary
 
     &__formula
         display: flex
         align-items: center
         justify-content: center
-        gap: 16px
+        gap: 0.5rem
         flex-wrap: wrap
-        margin: 30px 0
+        margin: 2rem 0
 
-    &__texto,
-    &__igual
-        font-size: 28px
+    &__texto
+        font-size: 1.5rem
         font-weight: bold
 
     &__fracao
@@ -62,37 +42,19 @@
         margin-left: 2px
 
     &__resultado
+        min-width: 125px
+        text-align: center
         background-color: variables.$color-primary
-        color: variables.$color-text-inverse
         color: variables.$color-text-inverse
         padding: 0.5rem 1rem
         border-radius: 8px
-        font-size: 30px
+        font-size: 1.5rem
         font-weight: bold
 
-// @media (max-width: 480px)
-//   .imc-calculo
-//     padding: 20px
-
-
-//   .imc-formula
-//     gap: 10px
-
-
-//   .imc-texto,
-//   .imc-igual
-//     font-size: 23px
-
-
-//   .imc-fracao
-//     min-width: 105px
-//     font-size: 16px
-
-
-//   .imc-resultado
-//     font-size: 25px
-
-
-//   .imc-inputs
-//     grid-template-columns: 1fr
-
+    @media (min-width: 600px)
+        &__formula
+            gap: 1rem
+        &__texto, &__resultado
+            font-size: 2.5rem
+        &__resultado
+            min-width: 150px
