@@ -1,0 +1,32 @@
+@use "../../variables"
+
+.imc
+    &__levels
+        background: variables.$color-surface
+        border-radius: 8px
+        padding: 1rem
+
+    &__title
+        margin-bottom: 1rem
+        color: variables.$color-text-primary
+
+    &__item
+        margin-bottom: 1rem
+        padding: 0.5rem
+        border-radius: 8px
+        display: flex
+        gap: 0.5rem
+        align-items: center
+
+        &:last-child
+            margin-bottom: 0
+
+    &__marker
+        left: -29px
+        top: 3px
+        width: 17px
+        height: 17px
+        border-radius: 50%
+
+    &__content
+        padding: 0 0 0 4px
