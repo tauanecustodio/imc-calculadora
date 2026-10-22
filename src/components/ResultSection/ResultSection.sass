@@ -1,12 +1,6 @@
 @use '../../variables'
 
 .imc
-    &__icon
-        margin-right: 0.5rem
-
-    &__title
-        margin-bottom: 1rem
-        color: variables.$color-text-primary
 
     &__formula
         display: flex
@@ -17,15 +11,15 @@
         margin-top: 2rem
 
     &__texto
-        font-size: 1.5rem
+        font-size: 1.2rem
         font-weight: bold
 
     &__fracao
         display: flex
         flex-direction: column
         align-items: center
-        min-width: 125px
-        font-size: 19px
+        min-width: 90px
+        font-size: 1rem
         text-align: center
 
     &__numerador,
@@ -42,19 +36,22 @@
         margin-left: 2px
 
     &__resultado
-        min-width: 125px
+        min-width: 110px
         text-align: center
         background-color: variables.$color-primary
         color: variables.$color-text-inverse
         padding: 0.5rem 1rem
         border-radius: 8px
-        font-size: 1.5rem
+        font-size: 1.2rem
         font-weight: bold
 
-    @media (min-width: 600px)
+    @media (min-width: 500px)
         &__formula
             gap: 1rem
         &__texto, &__resultado
             font-size: 2.5rem
         &__resultado
             min-width: 150px
+        &__fracao
+            min-width: 150px
+            font-size: 1.5rem
