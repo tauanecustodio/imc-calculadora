@@ -2,6 +2,7 @@ import './App.sass'
 import { Form } from './components/Form/Form'
 import { ResultSection } from './components/ResultSection/ResultSection'
 import { ClassificationList } from './components/ClassificationList/ClassificationList'
+import { Questions } from './components/Questions/Questions'
 import { useState } from 'react'
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <ClassificationList 
           result={Number(result)}
         />
+        <Questions />
       </main>
       
       <footer className="footer">
