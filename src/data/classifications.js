@@ -5,7 +5,7 @@ export const classifications = [
     titulo: "Abaixo do peso",
     min: 0,
     max: 18.5,
-    color: "#52A9E8",
+    color: "#468ec2",
     bgColor: "#EDF6FC"
   },
   {
@@ -23,7 +23,7 @@ export const classifications = [
     titulo: "Sobrepeso",
     min: 25,
     max: 29.9,
-    color: "#F3AD24",
+    color: "#aa7a1b",
     bgColor: "#FCF5E7"
   },
   {
@@ -32,7 +32,7 @@ export const classifications = [
     titulo: "Obesidade grau I",
     min: 30,
     max: 34.9,
-    color: "#FF741F",
+    color: "#d1601a",
     bgColor: "#FFF1E8"
   },
   {

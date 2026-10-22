@@ -5,7 +5,7 @@ import { classifications } from '../../data/classifications'
 export function ClassificationList(result) {
 
   return (
-    <div className="classification">
+    <section className="classification">
       <h2 className="classification__title">
         <i className="classification__icon fa-solid fa-chart-simple"></i>
         Classificação do IMC
@@ -33,14 +33,14 @@ export function ClassificationList(result) {
                 <p className="classification__faixa">
                   {item.faixa}
                 </p>
-                <h3 style={{ color: item.color }}>
+                <p style={{ color: item.color }}>
                   {item.titulo}
-                </h3>
+                </p>
               </div>
             </li>
           )
         })}
       </ul>
-    </div>
+    </section>
   )
 }

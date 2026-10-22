@@ -10,10 +10,10 @@ export function Questions() {
 
     return (
         <section className="questions">
-            <h3 className="questions__title">
+            <h2 className="questions__title">
                 <i className="fa-solid fa-question"></i>
                 Perguntas Frequentes
-            </h3>
+            </h2>
             <ul className="questions__list">
                 {questions.map((question) => {
                     const isOpen = openId === question.id
@@ -27,10 +27,10 @@ export function Questions() {
                                 className={`questions__button ${isOpen ? "questions__button--open" : ""}`} 
                                 onClick={() => toggleAnswer(question.id)}
                             >
-                                <h4 className="questions__question">
+                                <h3 className="questions__question">
                                     <i className="fa-olid fa-question"></i>
                                     {question.question}
-                                </h4>
+                                </h3>
                                 <i className={isOpen ? "fa-solid fa-chevron-down" : "fa-solid fa-chevron-right"}></i>
                             </button>
                             {isOpen && (

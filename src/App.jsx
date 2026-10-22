@@ -21,12 +21,14 @@ function App() {
       </header>
 
       <main className="main">
-        <p className="main__description">
-          O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal, abaixo ou acima do peso.
-        </p>
-        <p className="main__description">
-          Brinque com os controles abaixo para ajustar o peso e a altura, e veja como isso afeta o seu IMC.
-        </p>
+        <section className="main__intro">
+          <p className="main__description">
+            O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal, abaixo ou acima do peso.
+          </p>
+          <p className="main__description">
+            Brinque com os controles abaixo para ajustar o peso e a altura, e veja como isso afeta o seu IMC.
+          </p>
+        </section>
         <Form 
           peso={peso} 
           altura={altura} 

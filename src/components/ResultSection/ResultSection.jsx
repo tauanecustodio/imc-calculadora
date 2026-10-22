@@ -2,7 +2,7 @@ import './ResultSection.sass'
 
 export function ResultSection({ peso, altura, result }) {
   return (
-    <div className="imc">
+    <section className="imc">
 
       <h2 className="imc__title">
         <i className="imc__icon fa-solid fa-gauge-high"></i>
@@ -24,6 +24,6 @@ export function ResultSection({ peso, altura, result }) {
           {result || "Resultado"}
         </span>
       </div>
-    </div>
+    </section>
   );
 }
