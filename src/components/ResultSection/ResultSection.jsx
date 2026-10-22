@@ -5,7 +5,7 @@ export function ResultSection({ peso, altura, result }) {
     <div className="imc">
 
       <h2 className="imc__title">
-        <i className="fa-solid fa-gauge-high"></i>
+        <i className="imc__icon fa-solid fa-gauge-high"></i>
         Seu IMC
       </h2>
       <div className="imc__formula">
@@ -19,7 +19,7 @@ export function ResultSection({ peso, altura, result }) {
             {altura || "Altura"} (m)<sup>2</sup>
           </span>
         </div>
-        <span className="imc__igual">=</span>
+        <span className="imc__texto">=</span>
         <span className="imc__resultado">
           {result || "Resultado"}
         </span>

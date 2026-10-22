@@ -42,18 +42,18 @@ function App() {
         />
       </main>
       
-      <footer class="footer">
-        <p class="footer__copyright">
+      <footer className="footer">
+        <p className="footer__copyright">
           &copy; 2026 IMC. Todos os direitos reservados.
         </p>
 
-        <p class="footer__creditos">
-          Desenvolvido por 
+        <p className="footer__creditos">
+          Desenvolvido por
           <a
             href="https://github.com/tauanecustodio"
             target="_blank"
             title="Ir para o perfil do Github Tauane Custódio"
-            class="footer__link"
+            className="footer__link"
           >					
             Tauane Custódio
           </a>

@@ -15,8 +15,8 @@ export function Form({ peso, altura, setPeso, setAltura }) {
             </div>
             <input className="form__range-input"
                  type="range" 
-                 min="1" ma
-                 x="300" 
+                 min="1" 
+                 max="300" 
                  step="1" 
                  id="peso" 
                  name="peso" 
@@ -36,7 +36,7 @@ export function Form({ peso, altura, setPeso, setAltura }) {
             <input className="form__range-input"
                  type="range" 
                  min="0.5" 
-                 max="2.5" 
+                 max="2.1" 
                  step="0.01" 
                  id="altura" 
                  name="altura" 
