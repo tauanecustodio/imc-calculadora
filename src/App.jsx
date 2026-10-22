@@ -8,6 +8,8 @@ function App() {
   const [peso, setPeso] = useState(1)
   const [altura, setAltura] = useState(0.5)
 
+  const result = (peso / (altura * altura).toFixed(1)).toFixed(2) || 0
+
   return (
     <>
       <header className="header">
@@ -33,8 +35,11 @@ function App() {
         <ResultSection
           peso={peso}
           altura={altura}
+          result={result}
         />
-        <ClassificationList />
+        <ClassificationList 
+          result={Number(result)}
+        />
       </main>
       
       <footer class="footer">

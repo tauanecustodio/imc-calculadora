@@ -1,6 +1,6 @@
 import './ResultSection.sass'
 
-export function ResultSection({ peso, altura }) {
+export function ResultSection({ peso, altura, result }) {
   return (
     <div className="imc">
 
@@ -21,7 +21,7 @@ export function ResultSection({ peso, altura }) {
         </div>
         <span className="imc__igual">=</span>
         <span className="imc__resultado">
-          {(peso / (altura * altura).toFixed(1)).toFixed(2) || 0}
+          {result || "Resultado"}
         </span>
       </div>
     </div>
