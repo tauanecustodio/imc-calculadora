@@ -45,9 +45,6 @@ export function Form({ peso, altura, setPeso, setAltura }) {
                  required />
           </div>
           
-          <button type="submit" className="form__button">
-            Calcular
-          </button>
         </form>
     )
 }
